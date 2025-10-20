@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online shopping</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(pink, blue);
+      color: white;
+    }
+    header {
+      background: linear-gradient(skyblue, red);
+      text-align: center;
+      padding: 30px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      font-size: 25px;
+    }
+    nav {
+      background: linear-gradient( maroon, deeppink );
+      text-align: center;
+      padding: 10px;
+	  font-size: 25px;
+    }
+    nav a {
+      color: orange ;
+      margin: 0 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px;
+      background: linear-gradient(brown);
+    }
+    h2 {
+      color: white;
+    }
+    .highlight {
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+      padding: 2px 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: linear-gradient(teal);
+    }
+    th, td {
+      border: 2px solid white;
+      padding: 10px;
+      text-align: center;
+      color: black;
+	  font-size: 25px;
+    }
+    td a {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+	  font-size: 25px;
+    }
+    td a:hover {
+      text-decoration: underline;
+    }
+    .buy-btn {
+      background-color: green;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .buy-btn:hover {
+       background: linear-gradient(red);
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Online Shopping </h1>
+    <p>Explore the latest technology products 💻📲</p>
+  </header>
+
+  <nav>
+    <a href="https://www.apple.com/" target="_blank">Apple</a>
+    <a href="https://www.samsung.com/" target="_blank">Samsung</a>
+    <a href="https://www.mi.com/" target="_blank">Xiaomi</a>
+    <a href="https://www.hp.com/" target="_blank">HP</a>
+    <a href="https://www.dell.com/" target="_blank">Dell</a>
+  </nav>
+
+  <section>
+    <h2>Why Choose Us?</h2>
+    <h3><p>We provide the best products with <span class="highlight">affordable price</span> and excellent customer service.</p>
+    </h3>
+    <h2>Our Products</h2>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Brand</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td><a href="https://www.apple.com/iphone-14/" target="_blank">iPhone 14</a></td>
+        <td><a href="https://www.apple.com/" target="_blank">Apple</a></td>
+        <td>$999</td>
+        <td><a href="https://www.apple.com/iphone-14/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.apple.com/iphone-17/" target="_blank">iPhone 17</a></td>
+        <td><a href="https://www.apple.com/" target="_blank">Apple</a></td>
+        <td>$799</td>
+        <td><a href="https://www.apple.com/iphone-17/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.apple.com/iphone-17-pro/" target="_blank">iPhone 17 Pro</a></td>
+        <td><a href="https://www.apple.com/" target="_blank">Apple</a></td>
+        <td>$999</td>
+        <td><a href="https://www.apple.com/iphone-17-pro/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.samsung.com/galaxy-s23/" target="_blank">Galaxy S23</a></td>
+        <td><a href="https://www.samsung.com/" target="_blank">Samsung</a></td>
+        <td>$899</td>
+        <td><a href="https://www.samsung.com/galaxy-s23/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.mi.com/redmi-note-12/" target="_blank">Redmi Note 12</a></td>
+        <td><a href="https://www.mi.com/" target="_blank">Xiaomi</a></td>
+        <td>$299</td>
+        <td><a href="https://www.mi.com/redmi-note-12/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.apple.com/macbook-air/" target="_blank">MacBook Air</a></td>
+        <td><a href="https://www.apple.com/" target="_blank">Apple</a></td>
+        <td>$1199</td>
+        <td><a href="https://www.apple.com/macbook-air/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.samsung.com/galaxy-tab-s8/" target="_blank">Galaxy Tab S8</a></td>
+        <td><a href="https://www.samsung.com/" target="_blank">Samsung</a></td>
+        <td>$699</td>
+        <td><a href="https://www.samsung.com/galaxy-tab-s8/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.mi.com/mi-pad-6/" target="_blank">Mi Pad 6</a></td>
+        <td><a href="https://www.mi.com/" target="_blank">Xiaomi</a></td>
+        <td>$399</td>
+        <td><a href="https://www.mi.com/mi-pad-6/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.hp.com/pavilion-15/" target="_blank">HP Pavilion 15</a></td>
+        <td><a href="https://www.hp.com/" target="_blank">HP</a></td>
+        <td>$799</td>
+        <td><a href="https://www.hp.com/pavilion-15/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.dell.com/xps-13/" target="_blank">Dell XPS 13</a></td>
+        <td><a href="https://www.dell.com/" target="_blank">Dell</a></td>
+        <td>$1299</td>
+        <td><a href="https://www.dell.com/xps-13/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.apple.com/airpods-pro/" target="_blank">AirPods Pro</a></td>
+        <td><a href="https://www.apple.com/" target="_blank">Apple</a></td>
+        <td>$249</td>
+        <td><a href="https://www.apple.com/airpods-pro/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.samsung.com/galaxy-watch-6/" target="_blank">Galaxy Watch 6</a></td>
+        <td><a href="https://www.samsung.com/" target="_blank">Samsung</a></td>
+        <td>$349</td>
+        <td><a href="https://www.samsung.com/galaxy-watch-6/" class="buy-btn" onclick="openPopup(this.href);return false;">Buy Now</a></td>
+      </tr>
+    </table>
+  </section>
+
+ 
+<footer>
+  <p style="font-size: 20px;"> 📱2025 Online shopping,
+    Contact: 
+    <a href="mailto:Mrlaxmeshwarbhai@gmail.com" style="color: white;">
+    Mrlaxmeshwarbhai@gmail.com
+</a>
+  </p>
+</footer>
+
+
+</body>
+</html>
